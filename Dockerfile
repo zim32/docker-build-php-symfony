@@ -18,7 +18,6 @@ RUN \
 	sed -i -e 's/^;date.timezone =/date.timezone = UTC/g' /etc/php5/fpm/php.ini && \
 	sed -i -e 's/^;date.timezone =/date.timezone = UTC/g' /etc/php5/cli/php.ini && \
 	echo 'opcache.enable = Off' >> /etc/php5/mods-available/opcache.ini && \
-	echo 'opcache.enable = Off' >> /etc/php5/mods-available/opcache.ini && \
 	echo ';xdebug.remote_enable = On' >> /etc/php5/mods-available/xdebug.ini && \
 	echo ';xdebug.var_display_max_depth = 5' >> /etc/php5/mods-available/xdebug.ini && \
 	mkdir /home/zim32/www && \
